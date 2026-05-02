@@ -24,7 +24,7 @@ Ce projet est une application web conçue pour **centraliser et organiser mes re
 ## 🛠️ Technologies utilisées  
 *   **Frontend :** HTML5, CSS3 (Design personnalisé).
 *   **Backend :** PHP 8.x.
-*   **Base de données :** MySQL.
+*   **Base de données :** MaraiDB.
 *   **Serveur :** Compatible avec Apache / WAMP / Laragon.
 
 ---

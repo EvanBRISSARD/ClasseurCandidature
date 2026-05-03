@@ -1,6 +1,6 @@
 <header class="header-container"> 
         <div class="logo-container">
-            <img src="images/logo-favicon.png" alt="LogoSite" width="40" height="40">
+            <img src="images/logo.png" alt="LogoSite" width="40" height="40">
             <h1 class="head-h1"><?php echo $title; ?></h1>
         </div>
 

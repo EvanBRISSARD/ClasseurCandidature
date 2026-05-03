@@ -21,7 +21,7 @@ $titlePage = "Classeur - " . ucfirst($_GET['section']);
     <link rel="stylesheet" href="style/tab_style.css">
     <link rel="stylesheet" href="style/StyleTable.anima.css">
     <link rel="stylesheet" href="style/styleTag.css">
-    <link rel="icon" type="image/png" href="images/logo-favicon.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 

@@ -7,3 +7,12 @@ function tauxAcceptation($ToutCandidatures, $ToutCandidatureAcceptee) {
     return round($taux, 2) . "%";
     
 }
+
+function getEntrepriseParId($id, $entreprises) {
+    foreach ($entreprises as $entreprise) {
+        if ($entreprise['id'] === $id) {
+            return $entreprise;
+        }
+    }
+    return null;
+}

@@ -36,7 +36,7 @@ function getPDO() {
 
 function getToutEntreprises($db) {
     try {
-        $requete = $db->query("SELECT nom, email, site_web, localisation, description FROM entreprises;");
+        $requete = $db->query("SELECT id, nom, email, site_web, localisation, description FROM entreprises;");
         return $requete->fetchAll();
     } catch (PDOException $e) {
         error_log("Erreur SQL : " . $e->getMessage());

@@ -12,7 +12,6 @@
     font-weight: 100 900;
     font-style: italic;
 }
-
 /* BASE */
 body {
     display: flex;
@@ -219,6 +218,7 @@ main {
 }
 .btn-principal:hover {
     background-color: #5858a6;
+    box-shadow: #5858a6 0px 0px 10px;
 }
 
 .btn-secondaire {

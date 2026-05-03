@@ -1,0 +1,16 @@
+@keyframes apparitionLigne {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. On l'applique sur les lignes du corps du tableau */
+.content-tab-body {
+    opacity: 0; /* Important : invisible au départ */
+    animation: apparitionLigne 0.2s ease-out forwards;
+}

@@ -1,0 +1,15 @@
+/* Animation de chargement de page */
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Commence 20px plus bas */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);    /* Finit à sa place normale */
+    }
+}
+/* Application de l'animation au main */
+main {
+    animation: apparition 0.8s ease-out;
+}

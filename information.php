@@ -51,7 +51,9 @@ $candidaturesEntreprise = getCandidaturesParEntrepriseId($entreprise['id'], $can
         </div>
         <div>
             <div class="content-actions-secondaire">
-                <a href="classeur.php?section=entreprises" class="btn-secondaire"><i class="fa-solid fa-arrow-left"></i> Retour</a>
+                <button type="button" onclick="history.back()" class="btn-secondaire">
+                    <i class="fa-solid fa-arrow-left"></i> Retour
+                </button>
                 <a href="classeur.php?section=entreprises" class="btn-principal">+ Nouvelle candidature</a>
             </div>
 

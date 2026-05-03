@@ -1,7 +1,7 @@
 <?php
 require_once 'includes/fonction_db.php';
 require_once 'includes/fonction.php';
-$delai = 0.1;
+$delai = 0.01;
 $db = getPDO();
 
 if (isset($_GET['section']) && $_GET['section'] === 'candidatures') {

@@ -212,9 +212,6 @@ main {
     justify-content: center;
     margin-top: 45px;
 }
-.content-actions-secondaire a{
-    
-}
 
 .btn-principal {
     background-color: #262660;
@@ -230,6 +227,13 @@ main {
 }
 
 .btn-secondaire {
+    appearance: none;       /* Supprime le look "système" */
+    background: #f0f0f0;    /* Ta couleur de fond habituelle */
+    border: none;           /* Supprime la bordure grise en relief */
+    font-family: inherit;   /* Utilise la même police que le reste du site */
+    font-size: inherit;     /* Utilise la même taille que tes liens */
+    cursor: pointer;
+
     background-color: #ebebeb;
     color: #262660;
     padding: 7px 17px;

@@ -31,10 +31,20 @@ $entreprises = getToutEntreprises($db);
     <?php include 'includes/header.inc.php'; ?>
 
     <main>
+        <?php if ($isLoggedIn):?>
+            <?php if (isset($_GET['log']) && $_GET['log'] == 'ConnectionIN'):?>
+                <div class="content-message-valide">
+                    <h2><i class="fa-solid fa-user-check"></i> Connecté</h2>
+                    <p>Connexion effectuée avec succès pour <?php echo $_SESSION['username']?>.</p>
+                </div>
+            <?php endif; ?>
+        <?php endif; ?>
+
         <div class="content">
             <h2>Tableau de Bord</h2>
             <p>Information première sur les entreprises et les candidatures.</p>
         </div>
+
         <div class="container-cards">
             <div class="card">
                 <img src="images/batiments.png" alt="LogoEntreprise" width="50" height="50">

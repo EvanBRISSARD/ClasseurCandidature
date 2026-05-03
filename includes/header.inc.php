@@ -17,7 +17,7 @@
             <?php if ($isLoggedIn): ?>
                 <div class="container-connecter-info">
                     <i class="fa-solid fa-user"></i>
-                    <span><?php echo $_SESSION['username']; ?></span>
+                    <span><?php echo $_SESSION['nom']; ?> <?php echo $_SESSION['prenom']; ?></span>
                 </div>
             <?php endif; ?>
         </div>  

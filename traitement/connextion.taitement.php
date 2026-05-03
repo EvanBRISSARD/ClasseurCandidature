@@ -30,7 +30,7 @@ try {
         $_SESSION['email'] = $user['email'];
         $_SESSION['est_connecte'] = true;
 
-        header("Location: ../accueil.php");
+        header("Location: ../accueil.php?log=ConnectionIN");
         exit();
     } else {
         // ÉCHEC : Mauvais identifiants

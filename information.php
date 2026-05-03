@@ -57,6 +57,7 @@ $candidaturesEntreprise = getCandidaturesParEntrepriseId($entreprise['id'], $can
                 </button>
                 <?php if ($isLoggedIn):?>
                     <a href="classeur.php?section=entreprises" class="btn-principal">+ Nouvelle candidature</a>
+                    <a href="classeur.php?section=entreprises" class="btn-principal"><i class="fa-solid fa-pen"></i> Modifier</a>
                 <?php endif; ?>
             </div>
 

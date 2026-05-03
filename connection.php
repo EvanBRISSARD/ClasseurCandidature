@@ -4,7 +4,6 @@ require_once 'includes/fonction_db.php';
 require_once 'includes/fonction.php';
 $title = "Connection";
 $db = getPDO();
-
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +27,28 @@ $db = getPDO();
             <h2>Connection</h2>
             <p>Se connecter pour modifier et ajouter des candidatures.</p>
         </div>
+
+        <?php if (isset($_GET['log']) && $_GET['log'] == 'Erreur'):?>
+            <div class="content-message-erreur">
+                <h2><i class="fa-solid fa-circle-exclamation"></i> Invalide</h2>
+                <p>Le mot de passe ou l'username est incorrecte.</p>
+            </div>
+        <?php endif; ?>
+
+        <?php if (isset($_GET['log']) && $_GET['log'] == 'ChampsVides'):?>
+            <div class="content-message-erreur">
+                <h2><i class="fa-solid fa-circle-exclamation"></i> Invalide</h2>
+                <p>Le champ du mot de passe ou du nom d'utilisateur est obligatoire.</p>
+            </div>
+        <?php endif; ?>
+
+        <?php if (isset($_GET['log']) && $_GET['log'] == 'ErreurTechnique'):?>
+            <div class="content-message-erreur">
+                <h2><i class="fa-solid fa-triangle-exclamation"></i> Problème</h2>
+                <p>Exception de connexion à la base de données</p>
+            </div>
+        <?php endif; ?>
+
         <form action="traitement/connextion.taitement.php" method="POST" class="content-form-premiere">
             <div class="content-form">
 

@@ -90,9 +90,7 @@ body {
 }
 
 .container-connecter-info span{
-    border: #ffffff 3px solid;
     padding: 5px;
-    border-radius: 10px;
     margin-left: 10px ;
 }
 
@@ -109,8 +107,8 @@ main {
 /* Titre de la section */
 .content {
     text-align: center;
-    margin-bottom: 45px;
-    margin-top: 45px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 .content h2 {
     color: #262660;
@@ -354,4 +352,38 @@ footer {
 .social-icons:hover a {
     color: #ffffff !important;
     text-decoration: underline;
+}
+/*Boit de massage*/
+/*boite erreur*/
+.content-message-erreur {
+    background-color: #ffd4d4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    margin-top: 10px;
+}
+.content-message-erreur h2 {
+    margin-top: 0px;
+}
+.content-message-erreur p {
+    margin-bottom: 0px;
+}
+
+/*boite valide*/
+.content-message-valide {
+    background-color: #c8feca;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    margin-top: 10px;
+}
+.content-message-valide h2 {
+    margin-top: 0px;
+}
+.content-message-valide p {
+    margin-bottom: 0px;
 }

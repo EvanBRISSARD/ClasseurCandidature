@@ -1,0 +1,43 @@
+.content-form {
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width:  400px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    flex-shrink: 0;
+}
+.input-group {
+    display: flex;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    align-items: center;
+}
+.input-group label {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-weight: 700;
+    
+}
+.input-group input{
+    border: #262660 3px solid;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 15px;
+    font-family: 'NunitoSans', Arial, sans-serif;
+    width: 60%;
+    transition: 0.3s;
+}
+.input-group input:hover {
+    border-color: #5858a6;
+    box-shadow: #5858a6 0px 0px 10px;
+}
+.input-group input:focus {
+    border-color: #5858a6;
+    box-shadow: #5858a6 0px 0px 10px;
+    transform: scale(1.02);
+}

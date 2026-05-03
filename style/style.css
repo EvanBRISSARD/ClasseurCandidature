@@ -220,6 +220,12 @@ main {
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
+
+    appearance: none;
+    border: none;           /* Supprime la bordure grise en relief */
+    font-family: inherit;   /* Utilise la même police que le reste du site */
+    font-size: inherit;     /* Utilise la même taille que tes liens */
+    cursor: pointer;
 }
 .btn-principal:hover {
     background-color: #5858a6;

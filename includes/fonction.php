@@ -10,9 +10,18 @@ function tauxAcceptation($ToutCandidatures, $ToutCandidatureAcceptee) {
 
 function getEntrepriseParId($id, $entreprises) {
     foreach ($entreprises as $entreprise) {
-        if ($entreprise['id'] === $id) {
+        if ($entreprise['id'] == $id) {
             return $entreprise;
         }
     }
     return null;
+}
+function getCandidaturesParEntrepriseId($idEntreprise, $candidatures) {
+    $resultat = [];
+    foreach ($candidatures as $candidature) {
+        if ($candidature['entreprise_id'] == $idEntreprise) {
+            $resultat[] = $candidature;
+        }
+    }
+    return $resultat;
 }

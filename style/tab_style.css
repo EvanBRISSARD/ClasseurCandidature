@@ -5,10 +5,10 @@
     border-top: 1px solid #262660;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+    width: fit-content;
+    min-width: 60%;
+    max-width: 100%;
+    margin: 20px auto;
 }
 .tableau-header {
     background-color: #262660;
@@ -19,7 +19,9 @@
 .content-tab-header th {
     padding: 20px;
     text-align: center;
-    white-space: nowrap;
+    white-space: normal; 
+    word-wrap: break-word;
+    max-width: 300px;
 }
 
 /* Style pour le corps du tableau */
@@ -33,124 +35,6 @@ tr.content-tab-body:hover {
 .content-tab-body td{
     text-align: center;
     padding: 15px 20px;
-    padding-right: 0px;
+    padding: 15px 20px;
     border-bottom: 1px solid #2626603d;
-}
-/* style date d'envoi */
-.tag-DateEnvoi p{
-    color: #000000;
-    background-color: rgba(85, 76, 92, 0.206);
-    font-weight: 700 !important;
-    padding: 10px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 3px;
-}
-
-/* Style pour les statuts */
-p.tag-statut-Attante{
-    color: #000000;
-    font-weight: 700 !important;
-    padding: 10px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 3px;
-}
-p.tag-statut-Acceptee{
-    color: #ffffff;
-    background-color: rgb(115, 101, 211);
-    font-weight: 700 !important;
-    padding: 10px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 3px;
-}
-p.tag-statut-Refus{
-    color: #ffffff;
-    background-color: #d82020;
-    font-weight: 700 !important;
-    padding: 10px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 20px;
-}
-
-/* Style mode de contact */
-.tag-modeContact p{
-    border: #d7d7d7 2px solid;
-    border-radius: 10px;
-    color: #262660;
-    width: fit-content;
-    padding: 5px 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-/* Style Entreprise */
-.tag-Entreprise {
-    font-weight: 700 !important;
-    color: #262660;
-    width: 15%;
-}
-.tag-Entreprise p{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-/* Style Email */
-.tag-Email a{
-    background-color: #262660;
-    display: inline-block;
-    color: white;
-    border-radius: 3px;
-    padding: 5px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-.tag-Email:hover a{
-    box-shadow: #5858a6 0px 0px 10px;
-    transform: scale(1.05);
-    border-radius: 3px;
-    background-color: #5858a6;
-}
-/* Style Site web */
-.tag-Site-web a{
-    text-decoration: none;
-    color: #262860;
-    transition: all 0.3s ease;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-.tag-Site-web:hover a{
-    background-color: #d7d7d7;
-}
-/* Style localisation */
-.tag-Localisation p{
-    color: #ffffff;
-    background-color: rgb(115, 101, 211);
-    width: fit-content;
-    padding: 7px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }

@@ -20,6 +20,7 @@ $titlePage = "Classeur - " . ucfirst($_GET['section']);
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/tab_style.css">
     <link rel="stylesheet" href="style/StyleTable.anima.css">
+    <link rel="stylesheet" href="style/styleTag.css">
     <link rel="icon" type="image/png" href="images/logo-favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -106,7 +107,9 @@ $titlePage = "Classeur - " . ucfirst($_GET['section']);
                     <tbody class="tableau-boby">
                         <?php foreach ($entreprises as $entreprise) : ?>
                         <tr class="content-tab-body" style="animation-delay: <?= $delai ?>s;" onclick="window.location.href='information.php?id=<?php echo $entreprise['id']; ?>'">
+                            
                             <td class="tag-Entreprise"><p><?php echo $entreprise['nom']; ?></p></td>
+                            
                             <td class="tag-Email">
                                 <?php if ($entreprise['email']): ?>
                                     <a href="mailto:<?php echo $entreprise['email']; ?>"><i class="fa-solid fa-envelope"></i> <?php echo $entreprise['email']; ?></a>
@@ -114,6 +117,7 @@ $titlePage = "Classeur - " . ucfirst($_GET['section']);
                                     <span class="no-info"><i class="fa-regular fa-window-minimize"></i></span>
                                 <?php endif; ?>
                             </td>
+
                             <td class="tag-Site-web">
                                 <?php if ($entreprise['site_web']): ?>
                                     <a href="<?php echo $entreprise['site_web']; ?>" target="_blank"><i class="fa-solid fa-globe"></i> <?php echo $entreprise['site_web']; ?></a>
@@ -121,7 +125,9 @@ $titlePage = "Classeur - " . ucfirst($_GET['section']);
                                     <span class="no-info"><i class="fa-regular fa-window-minimize"></i></span>
                                 <?php endif; ?>
                             </td>
+                            
                             <td class="tag-Localisation"><p><i class="fa-solid fa-map-marker-alt"></i> <?php echo $entreprise['localisation']; ?></p></td>
+                        
                         </tr>
                         <?php $delai += 0.1; ?>
                         <?php endforeach; ?>

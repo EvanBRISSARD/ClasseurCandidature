@@ -1,0 +1,39 @@
+.content-detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    margin: 0px auto;
+}
+.content-detail-Entreprise {
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width:  600px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    flex-shrink: 0;
+}
+.content-detail-Entreprise-ligne {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 17px;
+    padding-top: 17px;
+}
+.content-detail-Entreprise-ligne strong {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+.content-detail-Entreprise-ligne span {
+    display: block;
+    flex: 1;
+    color: #555;
+    white-space: normal;
+}
+.content-detail-Candidatures {
+    flex: 1;
+}

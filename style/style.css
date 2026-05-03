@@ -56,7 +56,7 @@ body {
 
 /* Le Menu au milieu */
 .container-nav {
-    flex: 2; 
+    flex: 1; 
     display: flex;
     justify-content: center;
 }
@@ -68,13 +68,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
-.header-container::after {
-    content: "";
-    flex: 1;
-}
-
 
 .container-nav a {
     color: #ffffff;
@@ -88,6 +81,19 @@ body {
 .container-nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
+}
+/* Connection*/
+.container-connecter {
+    flex: 1; /* Prend aussi 1 part de l'espace */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-connecter-info span{
+    border: #ffffff 3px solid;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 10px ;
 }
 
 /* LE MAIN */

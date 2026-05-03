@@ -1,4 +1,5 @@
 <?php
+require_once 'includes/session.inc.php';
 require_once 'includes/fonction_db.php';
 require_once 'includes/fonction.php';
 $title = "Information";
@@ -54,7 +55,9 @@ $candidaturesEntreprise = getCandidaturesParEntrepriseId($entreprise['id'], $can
                 <button type="button" onclick="history.back()" class="btn-secondaire">
                     <i class="fa-solid fa-arrow-left"></i> Retour
                 </button>
-                <a href="classeur.php?section=entreprises" class="btn-principal">+ Nouvelle candidature</a>
+                <?php if ($isLoggedIn):?>
+                    <a href="classeur.php?section=entreprises" class="btn-principal">+ Nouvelle candidature</a>
+                <?php endif; ?>
             </div>
 
             <div class="content-detail">

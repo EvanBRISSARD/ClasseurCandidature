@@ -1,4 +1,5 @@
 <?php
+require_once 'includes/session.inc.php';
 require_once 'includes/fonction_db.php';
 require_once 'includes/fonction.php';
 $title = "Accueil";
@@ -8,6 +9,9 @@ $candidatureAcceptee = getToutCandidatureAcceptee($db);
 $canfidatureRefus = getToutCandidatureRefus($db);
 $candidatureAttente = getToutCandidatureAttente($db);
 $entreprises = getToutEntreprises($db);
+
+
+
 
 ?>
 

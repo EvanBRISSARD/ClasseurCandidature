@@ -1,4 +1,5 @@
 <?php
+require_once 'includes/session.inc.php';
 require_once 'includes/fonction_db.php';
 require_once 'includes/fonction.php';
 $delai = 0.01;

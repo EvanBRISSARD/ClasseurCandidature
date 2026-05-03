@@ -1,7 +1,8 @@
 <?php
+require_once 'includes/session.inc.php';
 require_once 'includes/fonction_db.php';
 require_once 'includes/fonction.php';
-$title = "Inscrition";
+$title = "Connection";
 $db = getPDO();
 
 ?>
@@ -11,7 +12,7 @@ $db = getPDO();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title; ?> - Tableau de Bord</title>
+    <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/StyleEntrer.anima.css">
     <link rel="stylesheet" href="style/styleFrom.css">
@@ -24,25 +25,15 @@ $db = getPDO();
 
     <main>
         <div class="content">
-            <h2>Inscription</h2>
-            <p>Inscription pour modifier et ajouter des candidature.</p>
+            <h2>Connection</h2>
+            <p>Se connecter pour modifier et ajouter des candidatures.</p>
         </div>
-        <form action="#" method="POST" class="content-form-premiere">
+        <form action="traitement/connextion.taitement.php" method="POST" class="content-form-premiere">
             <div class="content-form">
-                
-                <div class="input-group">
-                    <label for="username"><i class="fa-solid fa-user"></i> Nom</label>
-                    <input type="text" id="username" name="username" placeholder="Paul" required>
-                </div>
 
                 <div class="input-group">
-                    <label for="username"><i class="fa-solid fa-user"></i> Prénom</label>
-                    <input type="text" id="username" name="username" placeholder="Mirabel" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="username"><i class="fa-solid fa-paper-plane"></i> Mail</label>
-                    <input type="email" name="email" id="email" placeholder="exemple@domaine.com" required>
+                    <label for="username"><i class="fa-solid fa-user"></i> Username</label>
+                    <input type="text" id="username" name="username" placeholder="@exemple" required>
                 </div>
 
                 <div class="input-group">
@@ -52,7 +43,7 @@ $db = getPDO();
             </div>
             <div class="content-actions">
                 <a href="accueil.php" class="btn-secondaire"><i class="fa-solid fa-arrow-left"></i> Retourner à l'accueil</a>
-                <button type="submit" class="btn-principal">S'inscrire</button>
+                <button type="submit" class="btn-principal">Se connecter</button>
             </div>
         </form>
     </main>

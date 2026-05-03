@@ -37,7 +37,7 @@
     box-shadow: #5858a6 0px 0px 10px;
 }
 .input-group input:focus {
+    outline: none;
     border-color: #5858a6;
     box-shadow: #5858a6 0px 0px 10px;
-    transform: scale(1.02);
 }

@@ -37,8 +37,8 @@ p.tag-statut-Acceptee{
     border-radius: 3px;
 }
 p.tag-statut-Refus{
-    color: #ffffff;
-    background-color: #d82020;
+    color: #000000;
+    background-color: #ffd4d4;
     font-weight: 700 !important;
     padding: 10px;
     width: fit-content;

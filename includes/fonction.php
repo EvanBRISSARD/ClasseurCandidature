@@ -25,3 +25,9 @@ function getCandidaturesParEntrepriseId($idEntreprise, $candidatures) {
     }
     return $resultat;
 }
+function formaterDateFr($dateString) {
+    if (!$dateString || $dateString == '-') return '-';
+    
+    $d = new DateTime($dateString);
+    return $d->format('d-m-Y');
+}

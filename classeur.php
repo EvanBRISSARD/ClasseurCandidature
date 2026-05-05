@@ -60,7 +60,7 @@ $titlePage = "Classeur - " . ucfirst($_GET['section']);
                         <?php foreach ($candidatures as $candidature) : ?>
                         <?php $entreprise = getEntrepriseParId($candidature['entreprise_id'], $entreprises); ?>
                         <tr class="content-tab-body" style="animation-delay: <?= $delai ?>s;" onclick="window.location.href='information.php?id=<?php echo $entreprise['id']; ?>'">
-                                <td class="tag-DateEnvoi"><p><i class="fa-regular fa-calendar-days"></i> <?php echo $candidature['date_envoi']; ?></p></td>
+                                <td class="tag-DateEnvoi"><p><i class="fa-regular fa-calendar-days"></i> <?php echo formaterDateFr($candidature['date_envoi']); ?></p></td>
                                 
                                 <td class="tag-Entreprise">
                                     <?php if ($entreprise): ?>

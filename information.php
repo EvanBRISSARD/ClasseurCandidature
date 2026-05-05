@@ -117,7 +117,7 @@ $candidaturesEntreprise = getCandidaturesParEntrepriseId($entreprise['id'], $can
                         <tbody class="tableau-boby" >
                             <?php foreach ($candidaturesEntreprise as $candidature): ?>
                                 <tr class="content-tab-body">
-                                    <td class="tag-DateEnvoi"><p><i class="fa-regular fa-calendar-days"></i> <?php echo $candidature['date_envoi']; ?></p></td>
+                                    <td class="tag-DateEnvoi"><p><i class="fa-regular fa-calendar-days"></i> <?php echo formaterDateFr($candidature['date_envoi']); ?></p></td>
                                     
                                     <td class="tag-modeContact">
                                         <?php if ($candidature['mode_contact']): ?>

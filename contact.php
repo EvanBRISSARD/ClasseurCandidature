@@ -54,22 +54,22 @@ $db = getPDO();
                 <div class="content-form">
 
                     <div class="input-group">
-                        <label for="firstname"><i class="fa-solid fa-user"></i> Votre prénom</label>
+                        <label for="firstname"><i class="fa-solid fa-user"></i> Votre prénom *</label>
                         <input type="text" id="firstname" name="firstname" placeholder="Prénom" required>
                     </div>
 
                     <div class="input-group">
-                        <label for="email"><i class="fa-solid fa-envelope"></i> Votre adresse e-mail</label>
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Votre adresse e-mail *</label>
                         <input type="email" id="email" name="email" placeholder="exemple@domain.com" required>
                     </div>
 
                     <div class="input-group">
                         <label title="phone"><i class="fa-solid fa-phone"></i> Votre téléphone</label>
-                        <input type="tel" id="phone" name="phone" placeholder="06 00 00 00 00" required>
+                        <input type="tel" id="phone" name="phone" placeholder="06 00 00 00 00" >
                     </div>
 
                     <div class="input-group">
-                        <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+                        <label for="message"><i class="fa-solid fa-message"></i> Message *</label>
                         <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
                     </div>
                 </div>

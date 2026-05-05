@@ -8,7 +8,7 @@ require '../includes/load_env.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-if (empty($_POST['firstname']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['message'])) {
+if (empty($_POST['firstname']) || empty($_POST['email']) || empty($_POST['message'])) {
     header("Location: ../contact.php?log=ChampsVides");
     exit();
 }
@@ -43,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h1>Nouveau message de contact</h1>
             <p><b>Nom :</b> $prenom</p>
             <p><b>Email :</b> $email</p>
+            <p><b>Phone :</b> $phone</p>
             <p><b>Message :</b><br>$msg</p>
         ";
 

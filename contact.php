@@ -65,7 +65,7 @@ $db = getPDO();
 
                     <div class="input-group">
                         <label title="phone"><i class="fa-solid fa-phone"></i> Votre téléphone</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+33 12 34 567 89" >
+                        <input type="tel" id="phone" name="phone" placeholder="+33 1 23 45 67 89" >
                     </div>
 
                     <div class="input-group">

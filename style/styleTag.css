@@ -25,8 +25,8 @@ p.tag-statut-Attante{
     border-radius: 3px;
 }
 p.tag-statut-Acceptee{
-    color: #ffffff;
-    background-color: rgb(115, 101, 211);
+    color: #000000;
+    background-color: #c8feca;
     font-weight: 700 !important;
     padding: 10px;
     width: fit-content;
@@ -34,7 +34,7 @@ p.tag-statut-Acceptee{
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    border-radius: 3px;
+    border-radius: 20px;
 }
 p.tag-statut-Refus{
     color: #000000;

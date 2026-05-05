@@ -110,7 +110,7 @@ $candidaturesEntreprise = getCandidaturesParEntrepriseId($entreprise['id'], $can
                                 <th><i class="fa-regular fa-calendar-days"></i> Date d'envoi</th>
                                 <th><i class="fa-solid fa-address-book"></i> Mode de contact</th>
                                 <th><i class="fa-solid fa-circle-info"></i> Statut</th>
-                                <th><i class="fa-solid fa-city"></i> Resultat</th>
+                                <th><i class="fa-solid fa-book-open"></i> Resultat</th>
                             </tr>
 
                         </thead>

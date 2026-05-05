@@ -8,7 +8,7 @@
         <ul>
             <li><a href="accueil.php">Accueil</a></li>
             <li><a href="classeur.php?section=candidatures">Classeur</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>
 
@@ -16,8 +16,8 @@
         <div class="container-connecter">
             <?php if ($isLoggedIn): ?>
                 <div class="container-connecter-info">
-                    <i class="fa-solid fa-user"></i>
                     <span><?php echo $_SESSION['nom']; ?> <?php echo $_SESSION['prenom']; ?></span>
+                    <i class="fa-solid fa-user"></i>
                 </div>
             <?php endif; ?>
         </div>  

@@ -1,43 +1,82 @@
-.content-form {
-    margin: 10px 0;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    width:  400px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    flex-shrink: 0;
-}
-.input-group {
-    display: flex;
-    padding-bottom: 17px;
-    padding-top: 17px;
-    align-items: center;
-}
-.input-group label {
-    display: inline-block;
-    width: 150px;
-    text-align: center;
-    font-weight: 700;
-    
-}
-.input-group input{
+/* ============================================================
+   1. STYLES COMMUNS (S'appliquent aux deux formulaires)
+   ============================================================ */
+
+/* Style des champs de saisie */
+.input-group input, 
+.input-group textarea {
+    display: block;
     border: #262660 3px solid;
     border-radius: 10px;
-    padding: 7px;
+    padding: 10px;
     font-size: 15px;
     font-family: 'NunitoSans', Arial, sans-serif;
-    width: 60%;
+    width: 100%;
+    box-sizing: border-box; 
     transition: 0.3s;
 }
-.input-group input:hover {
-    border-color: #5858a6;
-    box-shadow: #5858a6 0px 0px 10px;
-}
-.input-group input:focus {
+
+/* Effets au survol et clic */
+.input-group input:hover, .input-group textarea:hover,
+.input-group input:focus, .input-group textarea:focus {
     outline: none;
     border-color: #5858a6;
-    box-shadow: #5858a6 0px 0px 10px;
+    box-shadow: 0px 0px 10px #5858a6;
+}
+
+/* ============================================================
+   2. FORME PREMIÈRE (Connexion - Labels à CÔTÉ des inputs)
+   ============================================================ */
+
+.content-form-premiere .content-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 480px; /* Un peu plus large pour l'aisance */
+}
+
+.content-form-premiere .input-group {
+    display: flex;
+    padding: 12px 0;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-form-premiere .input-group label {
+    flex: 0 0 120px;      /* Taille fixe pour aligner les inputs verticalement */
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: left;
+}
+
+/* ============================================================
+   3. FORME SECONDE (Contact - Labels AU-DESSUS des inputs)
+   ============================================================ */
+
+.content-form-seconde .content-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 600px; /* Plus large pour le champ message */
+}
+
+.content-form-seconde .input-group {
+    display: block; 
+    padding-bottom: 20px;
+}
+
+.content-form-seconde .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.content-form-seconde .input-group textarea {
+    min-height: 150px;
+    resize: vertical;
 }

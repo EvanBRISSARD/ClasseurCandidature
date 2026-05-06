@@ -23,7 +23,7 @@ $entreprises = getToutEntreprises($db);
     <title><?php echo $title; ?> - Tableau de Bord</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/StyleEntrer.anima.css">
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/logoV2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 

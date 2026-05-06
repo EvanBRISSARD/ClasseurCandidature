@@ -1,6 +1,6 @@
 <footer>
         <div class="footer-logo">
-            <img src="images/logo.png" alt="LogoSite" width="30" height="30">
+            <img src="images/logoV2.png" alt="LogoSite" width="30" height="30">
             <span>Classeur Candidature</span>
         </div>
         <div class="contact-info-doit">

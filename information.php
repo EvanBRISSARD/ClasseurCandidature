@@ -50,14 +50,23 @@ $candidaturesEntreprise = getCandidaturesParEntrepriseId($entreprise['id'], $can
             <h2>Détails de l'entreprise</h2>
             <p>Information supplémentaire sur l'entreprise.</p>
         </div>
+
+        <?php if ($isLoggedIn):?>
+            <?php if (isset($_GET['log']) && $_GET['log'] == 'success'):?>
+                <div class="content-message-valide">
+                    <h2><i class="fa-solid fa-download"></i> Modification réussir</h2>
+                    <p>Votre modification a été appliquée avec succès.</p>
+                </div>
+            <?php endif; ?>
+        <?php endif; ?>
+
         <div>
             <div class="content-actions-secondaire">
                 <button type="button" onclick="history.back()" class="btn-secondaire">
                     <i class="fa-solid fa-arrow-left"></i> Retour
                 </button>
                 <?php if ($isLoggedIn):?>
-                    <a href="classeur.php?section=entreprises" class="btn-principal">+ Nouvelle candidature</a>
-                    <a href="classeur.php?section=entreprises" class="btn-principal"><i class="fa-solid fa-pen"></i> Modifier</a>
+                    <a href="modifierEntreprise.php?id=<?php echo $entreprise['id']; ?>" class="btn-principal"><i class="fa-solid fa-file-arrow-down"></i> Modifier l'entreprise</a>
                 <?php endif; ?>
             </div>
 
@@ -148,6 +157,10 @@ $candidaturesEntreprise = getCandidaturesParEntrepriseId($entreprise['id'], $can
                             <?php endforeach; ?>
                         </tbody>
                     </table>
+                    <?php if ($isLoggedIn):?>
+                        <a href="classeur.php?section=entreprises" class="btn-secondaire">+ Nouvelle candidature</a>
+                        <a href="modifierCandidature.php?id=<?php echo $entreprise['id']; ?>" class="btn-principal"><i class="fa-solid fa-square-poll-horizontal"></i> Modifier</a>
+                     <?php endif; ?>
                 </div>
             </div>
         </div>

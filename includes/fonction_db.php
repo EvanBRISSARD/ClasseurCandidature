@@ -45,7 +45,7 @@ function getToutEntreprises($db) {
 }
 function getToutCandidatures($db) {
     try {
-        $requete = $db->query("SELECT entreprise_id, date_envoi, mode_contact, statut, resultat FROM candidatures ORDER BY date_envoi DESC ;");
+        $requete = $db->query("SELECT id, entreprise_id, date_envoi, mode_contact, statut, resultat FROM candidatures ORDER BY date_envoi DESC ;");
         return $requete->fetchAll();
     } catch (PDOException $e) {
         error_log("Erreur SQL : " . $e->getMessage());

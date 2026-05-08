@@ -4,7 +4,8 @@
 
 /* Style des champs de saisie */
 .input-group input, 
-.input-group textarea {
+.input-group textarea,
+.input-group select {
     display: block;
     border: #262660 3px solid;
     border-radius: 10px;

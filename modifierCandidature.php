@@ -57,7 +57,7 @@ $entreprise = getEntrepriseParId($_GET['id'], $entreprises);
 
         <div class="content-detail-Candidatures">
 
-            <form action="traitement/modifier_plusieurs_candidatures.php" method="POST">
+            <form action="traitement/modifierCandidature.traitement.php?id=<?php echo $_GET['id'] ?>" method="POST">
                 <table class="tableau">
                     <thead class="tableau-header">
                         <tr class="content-tab-header">
